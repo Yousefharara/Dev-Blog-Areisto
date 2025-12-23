@@ -6,11 +6,20 @@ import { API_PATHS } from "@/constants/posts";
 import PostCard from "@/components/organism/postCard";
 
 const PostsPage = async () => {
-  const data = await fetch(API_URL + API_PATHS.getAllPosts);
-  const { posts } = await data.json();
-  console.log(posts);
+  let result = null;
+  let error = null;
 
-  if (posts) {
+  try {
+    const data = await fetch(API_URL + API_PATHS.getAllPosts);
+    const { posts } = await data.json();
+    result = posts;
+    console.log(posts);
+  } catch (err) {
+    console.log(err.message);
+    error = err.message;
+  }
+
+  if (result) {
     return (
       <section className="posts__page">
         <Container>
@@ -20,7 +29,7 @@ const PostsPage = async () => {
               <p>Explore our collection of 100 articles</p>
             </div>
             <div className="posts__page__cards">
-              {posts.map((post) => (
+              {result.map((post) => (
                 <PostCard key={post.id} post={post} />
               ))}
             </div>
@@ -28,6 +37,11 @@ const PostsPage = async () => {
         </Container>
       </section>
     );
+  } else {
+    return <div>
+      <p>Connection Error</p>
+      <p>error message : {error}</p>
+    </div>;
   }
 };
 
