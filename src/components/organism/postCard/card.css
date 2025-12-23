@@ -1,0 +1,71 @@
+.posts__page .posts__content .posts__page__cards .card {
+  border-radius: 8px;
+  box-shadow: 0 0 8px #ddd;
+  padding: 1.5rem 2rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+}
+
+.posts__page .posts__content .posts__page__cards .card .icon svg {
+  color: #888;
+}
+
+.posts__page .posts__content .posts__page__cards .card .card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.posts__page .posts__content .posts__page__cards .card .card__header small {
+  padding: 5px 12px;
+  background-color: var(--secondary-clr);
+  border-radius: 10px;
+}
+
+.posts__page .posts__content .posts__page__cards .card .card__header .icon {
+  padding: 0.6rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.posts__page .posts__content .posts__page__cards .card .icon.active {
+  background-color: var(--primary-clr);
+}
+
+.posts__page .posts__content .posts__page__cards .card .icon.active svg {
+  color: #fff;
+}
+
+.posts__page
+  .posts__content
+  .posts__page__cards
+  .card
+  .card__content
+  .card__title {
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.posts__page
+  .posts__content
+  .posts__page__cards
+  .card
+  .card__content
+  .card__body {
+  font-size: 13px;
+  color: var(--font-secondary-clr);
+}
+
+.posts__page .posts__content .posts__page__cards .card .card__footer a {
+  color: var(--primary-clr);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
