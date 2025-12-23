@@ -27,7 +27,8 @@ const Header = () => {
               <Link href={"/posts "}>Posts</Link>
             </li>
             <li>
-              <Link className="icon" href={"/cart__favorite"}>
+              {/* // ! later */}
+              <Link className="icon" href={"#"}>
                 <FontAwesomeIcon
                   icon={faHeart}
                   style={{ color: "var(--primary-clr)" }}
