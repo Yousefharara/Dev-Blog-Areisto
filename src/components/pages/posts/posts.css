@@ -1,0 +1,25 @@
+.posts__page {
+  margin: 3rem 0;
+}
+
+.posts__page .posts__content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.posts__page .posts__content .posts__page__title h1 {
+  color: var(--font-primary-clr);
+  margin-bottom: 1rem;
+}
+
+.posts__page .posts__content .posts__page__title p {
+  color: #888;
+  font-size: 14px;
+}
+
+.posts__page .posts__content .posts__page__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 15px;
+}
