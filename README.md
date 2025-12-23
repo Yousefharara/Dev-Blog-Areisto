@@ -12,4 +12,4 @@ bun dev
 
 
 ## Deploy in Vercel
-### (Live Demo)[]
+### [Live Demo](https://dev-blog-areisto.vercel.app/)
