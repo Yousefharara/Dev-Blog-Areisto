@@ -1,0 +1,119 @@
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 5rem 0;
+}
+
+main .main__section .main__section__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+main .main__section .main__section__content h1 {
+  font-size: 3rem;
+  color: var(--font-primary-clr);
+  text-align: center;
+}
+
+main .main__section .main__section__content .artifact {
+  background-color: var(--secondary-clr);
+  padding: 8px 1rem;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+main .main__section .main__section__content .artifact small {
+  color: var(--primary-clr);
+  font-size: 12px;
+}
+
+main .main__section .main__section__content .artifact i {
+  font-size: 10px;
+}
+
+main .main__section .main__section__content p {
+  max-width: 580px;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--font-secondary-clr);
+  color: #666;
+  font-size: 14px;
+}
+
+main .main__section .main__section__content button {
+  padding: 0.8rem 1.3rem;
+  border-radius: 4px;
+  background-color: var(--primary-clr);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+main .main__section .main__section__content button p {
+  color: #fff;
+  font-weight: 500;
+}
+
+main .learn__section {
+  margin-top: 20px;
+}
+
+main .learn__section .learn__section__content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+main .learn__section .learn__section__content h2 {
+  text-align: center;
+}
+
+main .learn__section .learn__section__content .card__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+main .learn__section .learn__section__content .card__list .card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 5px #ddd;
+  padding: 1rem;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+
+main .learn__section .learn__section__content .card__list .card h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+main .learn__section .learn__section__content .card__list .card .icon {
+  border-radius: 8px;
+  padding: 0.6rem 0.8rem;
+  background-color: #e9edf8;
+  width: fit-content;
+  margin-bottom: 10px;
+}
+
+main
+  .learn__section
+  .learn__section__content
+  .card__list
+  .card
+  .icon.data__fetching {
+  background-color: #e5f8f4;
+}
+
+main .learn__section .learn__section__content .card__list .card p {
+  font-size: 13px;
+  color: var(--font-primary-clr);
+}
