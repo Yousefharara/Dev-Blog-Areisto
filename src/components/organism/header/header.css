@@ -1,0 +1,59 @@
+header {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav .hero {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header nav .hero span {
+  padding: 0.7rem 0.8rem;
+  border-radius: 8px;
+  background-color: #1f49b7;
+  color: #fff;
+  font-weight: bold;
+}
+
+header nav .hero p {
+  font-weight: 600;
+  font-size: 19px;
+  letter-spacing: 0.8;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  align-items: center;
+}
+
+header nav ul li a {
+  color: var(--font-secondary-clr);
+  font-weight: 500;
+  font-size: 14px;
+  position: relative;
+}
+
+header nav ul li a span {
+  position: absolute;
+  background-color: var(--primary-clr);
+  color: #fff;
+  font-size: 12px;
+  border-radius: 50px;
+  font-weight: bold;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 80%;
+  top: -80%;
+}
