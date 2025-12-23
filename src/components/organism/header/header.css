@@ -1,6 +1,9 @@
 header {
   padding: 0.8rem 0;
   border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  background-color: inherit;
 }
 
 header nav {
